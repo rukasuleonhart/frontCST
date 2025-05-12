@@ -1,0 +1,35 @@
+/* Alinhando Icon com H1 */
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.menu-opcoes {
+  display: flex;
+  gap: 16px; /* Espaçamento entre os botões */
+  flex-wrap: wrap; /* Faz quebrar linha em telas menores */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin: 20px 0;
+  height: 8vh;
+}
+
+.opcoes {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #086448;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.opcoes:hover {
+  background-color: #45a049;
+}
+
+#auth {
+  margin-top: 20vh; /* ou o valor que desejar, ex: 50px */
+}
