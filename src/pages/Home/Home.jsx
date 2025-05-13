@@ -1,7 +1,18 @@
 import "./Home.css";
 import icon from "../../assets/icon.png"
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const GetPageLogin = () => {
+        navigate("/login");
+    };
+    
+    const GetPageRegister = () => {
+        navigate("/register");
+    };
+
     return (
     <div>
         <div className="title-container">
@@ -9,14 +20,14 @@ const Home = () => {
             <h1>Fisioterapia CST Estética & Cosmética</h1>
         </div>
         <div className="menu-opcoes">
-            <button className="opcoes">Agendar Consulta</button>
-            <button className="opcoes">Consultar Agenda</button>
-            <button className="opcoes">Prontuário</button>
-            <button className="opcoes">Relatórios</button> 
+            <button className="primary-button">Agendar Consulta</button>
+            <button className="primary-button">Consultar Agenda</button>
+            <button className="primary-button">Prontuário</button>
+            <button className="primary-button">Relatórios</button> 
         </div>
         <div className="menu-opcoes" id="auth">
-            <button className="opcoes">Conectar-se</button>
-            <button className="opcoes">Registrar-se</button>
+            <button className="primary-button" onClick={GetPageLogin}>Conectar-se</button>
+            <button className="primary-button" onClick={GetPageRegister}>Registrar-se</button>
         </div>
     </div>
     )
